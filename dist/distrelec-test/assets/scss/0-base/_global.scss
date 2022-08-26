@@ -1,0 +1,15 @@
+/***************** GLOBAL STYLE START *********************/
+.related-products-wrapper {
+    margin-top: 50px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+    background: $whiteColor;
+    display: block;
+    overflow-y: hidden;
+    padding: 15px 30px;
+    &-heading {
+        @include font-size-line-height(20px, 24px, 700);
+        color: $blackColor;
+        margin: 15px 0;
+    }
+}
+/***************** GLOBAL STYLE END *********************/

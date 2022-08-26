@@ -1,0 +1,57 @@
+/************** CAROUSEL STYLE START *****************/
+
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+.owl-carousel {
+    .owl-stage {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .owl-item {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: auto !important;
+        img {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+
+    &.owl-theme .owl-nav {
+        @include position-absolute(0px, 0px, 0px, 0px);
+        @include height-width(100%, 100%);
+        margin-top: 0;
+        z-index: -1;
+    }
+    &.owl-theme .owl-prev,
+    &.owl-theme .owl-next {
+        @include position-absolute(0px, 0px, 0px, 0px);
+        @include height-width(30px, 20px);
+        @include font-size-line-height(24px, 30px, 400);
+        padding: 0;
+        color: $blackColor;
+        margin: auto;
+        background: transparent;
+        &:hover {
+            background: transparent;
+            color: $blackColor;
+            opacity: 0.6;
+        }
+    }
+    &.owl-theme .owl-prev {
+        left: -25px;
+        right: auto;
+    }
+    &.owl-theme .owl-next {
+        left: auto;
+        right: -25px;
+    }
+}
+/************** CAROUSEL STYLE END *****************/

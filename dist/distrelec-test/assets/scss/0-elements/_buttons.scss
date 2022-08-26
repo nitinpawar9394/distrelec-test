@@ -1,0 +1,22 @@
+/****************  BUTTONS STYLE START *****************/
+.btn {
+    &:focus {
+        box-shadow: none;
+    }
+    &-buy-now {
+        @include font-size-line-height(12px, 14px, 700);
+        @include border-radius(2px);
+        background: $btnBgColor;
+        border: 0;
+        padding: 5px 15px;
+        text-align: center;
+        color: $whiteColor;
+        &:hover,
+        &:focus {
+            background: $btnBgHoverColor;
+            color: $whiteColor;
+        }
+    }
+}
+
+/****************  BUTTONS STYLE END *****************/

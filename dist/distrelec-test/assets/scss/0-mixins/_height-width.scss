@@ -1,0 +1,13 @@
+/****** HEIGHT WIDTH MIXIN START *******/
+
+@mixin height-width($height, $width) {
+  @if length($height) == 1 {
+    width: $width;
+    height: $height;
+  } @else {
+    width: $width;
+    height: $width;
+  }
+}
+
+/****** HEIGHT WIDTH MIXIN END *******/

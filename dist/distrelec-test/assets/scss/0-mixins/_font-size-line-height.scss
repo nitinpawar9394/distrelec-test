@@ -1,0 +1,20 @@
+/****** FONT SIZE MIXIN START *******/
+
+@mixin font-size($sizeValue: 12) {
+    font-size: $sizeValue;
+}
+@mixin line-height($heightValue: 15) {
+    line-height: $heightValue;
+}
+
+@mixin font-weight($weighttValue: 400) {
+    font-weight: $weighttValue;
+}
+
+@mixin font-size-line-height($sizeValue: 12, $heightValue: 15, $weighttValue: 400) {
+    @include font-size($sizeValue);
+    @include line-height($heightValue);
+    @include font-weight($weighttValue);
+}
+
+/****** FONT SIZE MIXIN END *******/
